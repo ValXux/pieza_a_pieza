@@ -717,6 +717,146 @@ a:hover {
   padding: 20px;
   text-align: center;
 }
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background-color: #f5f7ff;
+    padding: 60px 0;
+    margin-top: 50px; /* Para dar espacio arriba */
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form form label {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form input[type="number"],
+.contact-form form input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.contact-form form input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.contact-form form input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
+}
+/* Estilo para el botón de envío */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
+}
+
+.btn:hover {
+    background: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 140, 108, 0.3);
+    color: white;
+}
+
+/* Estilos para el video y la opacidad del fondo */
+.video-overlay {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo opaco */
+    z-index: 1000; /* Asegura que se muestre por encima de otros contenidos */
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.video-overlay iframe {
+    border-radius: 10px;
+}
+
+.video-btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.video-btn-container .btn {
+    padding: 12px 28px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.video-btn-container .btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn-close {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background-color: var(--color-primary);
+}
 
 .visualization-title {
   font-size: 1.1rem;

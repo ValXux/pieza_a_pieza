@@ -51,54 +51,67 @@
             </div>
         </section>
 
-        <!-- Cómo Funciona -->
-        <section class="section how-it-works" id="como-funciona">
-            <div class="container">
-                <h2 class="section-title">Cómo Funciona</h2>
-                <p class="section-subtitle">Pieza a Pieza hace que alcanzar tus metas sea una experiencia visual y
-                    emocionante</p>
+ <!-- Cómo Funciona -->
+<section class="section how-it-works" id="como-funciona">
+    <div class="container">
+        <h2 class="section-title">Cómo Funciona</h2>
+        <p class="section-subtitle">Pieza a Pieza hace que alcanzar tus metas sea una experiencia visual y emocionante</p>
 
-                <div class="steps">
-                    <div class="step animate-on-scroll visible">
-                        <div class="step-number">1</div>
-                        <div class="step-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3 class="step-title">Elige tu meta</h3>
-                        <p>Selecciona un objetivo personal o profesional que quieras lograr y el estilo visual que deseas
-                            para visualizarlo.</p>
-                    </div>
-
-                    <div class="step animate-on-scroll visible">
-                        <div class="step-number">2</div>
-                        <div class="step-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3 class="step-title">Recibe micro-hábitos</h3>
-                        <p>Nuestra IA genera pequeñas acciones personalizadas adaptadas a tu objetivo y ritmo de vida.</p>
-                    </div>
-
-                    <div class="step animate-on-scroll visible">
-                        <div class="step-number">3</div>
-                        <div class="step-icon">
-                            <i class="fas fa-puzzle-piece"></i>
-                        </div>
-                        <h3 class="step-title">Desbloquea piezas</h3>
-                        <p>Cada acción completada desbloquea una pieza visual de tu rompecabezas, árbol, ciudad o
-                            constelación.</p>
-                    </div>
-
-                    <div class="step animate-on-scroll">
-                        <div class="step-number">4</div>
-                        <div class="step-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3 class="step-title">Visualiza tu logro</h3>
-                        <p>Observa cómo tu imagen se completa mientras avanzas hacia tu meta, reforzando tu motivación.</p>
-                    </div>
+        <div class="steps">
+            <div class="step animate-on-scroll visible">
+                <div class="step-number">1</div>
+                <div class="step-icon">
+                    <i class="fas fa-bullseye"></i>
                 </div>
+                <h3 class="step-title">Elige tu meta</h3>
+                <p>Selecciona un objetivo personal o profesional que quieras lograr y el estilo visual que deseas
+                    para visualizarlo.</p>
             </div>
-        </section>
+
+            <div class="step animate-on-scroll visible">
+                <div class="step-number">2</div>
+                <div class="step-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="step-title">Recibe micro-hábitos</h3>
+                <p>Nuestra IA genera pequeñas acciones personalizadas adaptadas a tu objetivo y ritmo de vida.</p>
+            </div>
+
+            <div class="step animate-on-scroll visible">
+                <div class="step-number">3</div>
+                <div class="step-icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3 class="step-title">Desbloquea piezas</h3>
+                <p>Cada acción completada desbloquea una pieza visual de tu rompecabezas, árbol, ciudad o
+                    constelación.</p>
+            </div>
+
+            <div class="step animate-on-scroll">
+                <div class="step-number">4</div>
+                <div class="step-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="step-title">Visualiza tu logro</h3>
+                <p>Observa cómo tu imagen se completa mientras avanzas hacia tu meta, reforzando tu motivación.</p>
+            </div>
+        </div>
+
+        <!-- Botón para mostrar el video -->
+        <div class="video-btn-container">
+            <button class="btn" id="view-video-btn">Vista Previa</button>
+        </div>
+
+        <!-- Contenedor del video con fondo opaco (inicialmente oculto) -->
+        <div class="video-overlay" id="video-overlay">
+            <div class="video-container">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/PAsONW43Dhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button class="btn-close" id="close-video-btn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- Visualizaciones -->
         <section class="section visualizations">
@@ -400,6 +413,35 @@
                 <a href="#planes" class="btn">Empieza Gratis</a>
             </div>
         </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="section contact-form" id="contacto">
+            <div class="container">
+            <h2 class="section-title">Formulario de Contacto</h2>
+            <p class="section-subtitle">Rellena este formulario y nos pondremos en contacto contigo</p>
+
+            <form action="send_email.php" method="POST" id="contact-form">
+                <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <input type="submit" class="btn" value="Enviar">
+                </div>
+                <div class="form-group"></div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer class="footer">

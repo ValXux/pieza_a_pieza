@@ -88,4 +88,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Run on scroll
     window.addEventListener('scroll', checkIfInView);
+
+    // Video show/hide functionality
+    const videoBtn = document.getElementById('view-video-btn');
+    const videoOverlay = document.getElementById('video-overlay');
+    const closeBtn = document.getElementById('close-video-btn');
+
+    // Show video on button click
+    videoBtn.addEventListener('click', function() {
+        videoOverlay.style.display = 'flex';
+    });
+
+    // Close video when close button is clicked
+    closeBtn.addEventListener('click', function() {
+        videoOverlay.style.display = 'none';
+    });
+
+    // Close video when clicking outside of the video container
+    videoOverlay.addEventListener('click', function(e) {
+        if (e.target === videoOverlay) {
+            videoOverlay.style.display = 'none';
+        }
+    });
 });
